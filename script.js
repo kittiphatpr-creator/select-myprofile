@@ -17,3 +17,13 @@ toggleButton.addEventListener('click', () => {
 // ===== Footer: ปีอัตโนมัติด้วย template literal =====
 const currentYear = new Date().getFullYear();
 footer.textContent = `© ${currentYear} — Deploy ด้วย GitHub Pages 🚀`;
+const nameInput = document.getElementById("name-input");
+const cardName = document.getElementById("card-name");
+
+nameInput.addEventListener("input", function () {
+    if (this.value.trim() === "") {
+        cardName.textContent = "kittiphat";
+    } else {
+        cardName.textContent = this.value;
+    }
+});
