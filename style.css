@@ -1,8 +1,8 @@
 :root {
-  --bg: #f4f6fb;
+  --bg: #7305b3;
   --card-bg: #ffffff;
   --text: #1f2933;
-  --accent: #2563eb;
+  --accent: #8808a1;
 }
  
 /* ธีมมืด: สลับด้วยการเติม class ที่ <body> ผ่าน JS */
@@ -10,7 +10,7 @@ body.dark {
   --bg: #0f172a;
   --card-bg: #1e293b;
   --text: #e2e8f0;
-  --accent: #60a5fa;
+  --accent: #0f8bf0;
 }
  
 /* ===== Layout ===== */
@@ -87,6 +87,7 @@ body {
   background-color: var(--accent);
   color: #ffffff;
   cursor: pointer;
+  margin-bottom: 30px;
 }
  
 .card__footer {
